@@ -3,35 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TALLY COUNT</title>
-    <style>
-        body {
-            background-image: url('PLACEHOLDER_FOR_BACKGROUND_IMAGE');
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        /* Add your additional styles here */
-    </style>
+    <title>Mike On Parenting Tally Count</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>TALLY COUNT</h1>
-    <div id="tally">
+    <div class="container">
+        <h1>Mike On Parenting Tally Count</h1>
         <button id="increment">Increment</button>
-        <p id="count">Count: 0</p>
-        <button id="decrement">Decrement</button>
+        <button id="reset">Reset</button>
+        <div id="count">0</div>
+        <footer>
+            <p>&copy; 2026 Tally Counter</p>
+        </footer>
     </div>
-    <script>
-        let count = 0;
-        const countDisplay = document.getElementById('count');
-        document.getElementById('increment').addEventListener('click', () => {
-            count++;
-            countDisplay.textContent = `Count: ${count}`;
-        });
-        document.getElementById('decrement').addEventListener('click', () => {
-            count--;
-            countDisplay.textContent = `Count: ${count}`;
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
-</html>
+<style>
+    body {
+        background-image: url('family.jpg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        text-align: center;
+    }
+</style>
