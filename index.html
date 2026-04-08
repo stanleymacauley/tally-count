@@ -4,30 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mike On Parenting Tally Count</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Mike On Parenting Tally Count</h1>
-        <button id="increment">Increment</button>
-        <button id="reset">Reset</button>
-        <div id="count">0</div>
-        <footer>
-            <p>&copy; 2026 Tally Counter</p>
-        </footer>
-    </div>
-    <script src="script.js"></script>
+    </header>
+    <main>
+        <img src="family.jpg" alt="Family Tally Count">
+        <p>Your tally counts will be displayed here.</p>
+    </main>
+    <script>
+        const STORAGE_KEY = 'mikeTallyCounts';
+        // Add your tally logic here...
+    </script>
 </body>
-<style>
-    body {
-        background-image: url('family.jpg');
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-family: Arial, sans-serif;
-    }
-    .container {
-        text-align: center;
-    }
-</style>
+</html>
